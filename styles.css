@@ -1,0 +1,15 @@
+body /* selector*/
+{
+    background-color: rgb(26, 15, 0);
+
+}
+
+#notice  
+{
+    font-size: large;
+}
+
+.desc 
+{
+    color:black
+}
