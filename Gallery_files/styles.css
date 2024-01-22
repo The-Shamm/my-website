@@ -1,0 +1,41 @@
+body /* selector*/
+{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+header 
+{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-container
+ {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height:85vh;
+margin-top: -500px;
+ }
+
+ img 
+ {
+    max-width:  20%;
+    height: auto;
+    display: block;
+    margin: auto;
+ }
+
+ #notice
+ {
+color: antiquewhite;
+ }
+
+ .desc
+ {
+color: antiquewhite;
+ }
