@@ -8,7 +8,7 @@ body /* selector*/
 
 header 
 {
-    background-color: rgb(0, 0, 0);
+    background-color: purple);
     text-align: center;
     padding: 20px 0;
 }
@@ -32,10 +32,23 @@ margin-top: -500px;
 
  #notice
  {
-color: antiquewhite;
+color: rgb(0, 0, 0);
  }
 
  .desc
  {
 color: antiquewhite;
  }
+ h2 
+{
+    background-color: rgb(23, 1, 23));
+    text-align: :left;
+    padding: 20px 0;
+}
+
+img 
+{
+ float: left;
+ margin-right:2em;
+ max-width:  50%;
+}
