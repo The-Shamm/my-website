@@ -9,25 +9,27 @@ body /* selector*/
 header 
 {
     background-color: purple);
-    text-align: center;
-    padding: 20px 0;
+    text-align: left;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
 }
 
 .logo-container
  {
- display: flex;
- justify-content: center;
- align-items: center;
- height:85vh;
-margin-top: -500px;
+max-width: 50%;
  }
 
- img 
+ .logo-container img 
  {
     max-width:  20%;
-    height: auto;
-    display: block;
-    margin: auto;
+    max-height: 100%;
+
+ }
+ .text-container
+ {
+    flex-grow: 1;
+    margin-left: 20px; 
  }
 
  #notice
