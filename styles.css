@@ -2,13 +2,11 @@ body /* selector*/
 {
     margin: 0;
     padding: 0;
-    
-
 }
 
 header 
 {
-    background-color: purple);
+    background-color: purple;
     text-align: left;
     padding: 30px 20px;
     display: flex;
@@ -17,7 +15,7 @@ header
 
 .logo-container
  {
-max-width: 50%;
+   max-width: 50%;
  }
 
  .logo-container img 
