@@ -52,3 +52,10 @@ img
  margin-right:2em;
  max-width:  50%;
 }
+
+footer .refusal {
+
+    font-size: 80%;
+    font-style: italic;
+    text-align: center;
+}
