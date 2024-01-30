@@ -20,7 +20,7 @@ header
 
  .logo-container img 
  {
-    max-width:  20%;
+    max-width:  50%;
     max-height: 100%;
 
  }
@@ -70,4 +70,18 @@ div #topLevelIntro {
 
 header .hi {
     color: rgb(215, 160, 9);
+}
+
+a.gallery:hover::after {
+
+    content: "PREPARE TO BE WOWED!!";
+    display: block;
+    position: absolute;
+    background-color: #cec9b5;
+    padding: 10px;
+    border: 1px solid #c9ab00;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 1;
 }
