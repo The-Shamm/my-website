@@ -6,7 +6,7 @@ body /* selector*/
 
 header 
 {
-    background-color: purple;
+    background-color: rgb(3, 0, 3);
     text-align: left;
     padding: 30px 20px;
     display: flex;
@@ -32,12 +32,12 @@ header
 
  #notice
  {
-color: rgb(120, 72, 9);
+color: rgb(215, 160, 9);
  }
 
  .desc
  {
-color: rgb(120, 72, 9);
+color:rgb(215, 160, 9);
  }
  h2 
 {
@@ -58,4 +58,16 @@ footer .refusal {
     font-size: 80%;
     font-style: italic;
     text-align: center;
+}
+
+main {
+    color: rgb(16, 14, 1);
+}
+
+div #topLevelIntro {
+    color: rgb(215, 160, 9);
+}
+
+header .hi {
+    color: rgb(215, 160, 9);
 }
