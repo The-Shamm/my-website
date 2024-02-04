@@ -33,6 +33,7 @@ header
  #notice
  {
 color: rgb(215, 160, 9);
+z-index: 1; /*bring to front*/
  }
 
  .desc
@@ -41,8 +42,8 @@ color:rgb(215, 160, 9);
  }
  h2 
 {
-    background-color: rgb(23, 1, 23));
-    text-align: :left;
+    background-color: rgb(233, 5, 233);
+    text-align: left;
     padding: 20px 0;
 }
 
@@ -57,13 +58,20 @@ footer .refusal {
 
     font-size: 80%;
     font-style: italic;
-    text-align: center;
+    text-align: top;
 }
 
 main {
     color: rgb(16, 14, 1);
 }
-
+main h2 {
+    background-image: url('Images/Nails4.jpg'); 
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    color: gold; /* Set text color to white for better visibility */
+    padding: 50px; /* Add some padding to the h2 */
+    text-align: right; /* Align text to the left */
+}
 div #topLevelIntro {
     color: rgb(215, 160, 9);
 }
@@ -71,17 +79,65 @@ div #topLevelIntro {
 header .hi {
     color: rgb(215, 160, 9);
 }
-
+#pathLinks {
+    color: gold
+}
+nav ul {
+list-style-type: none; /*remove default*/
+margin: 0; /* Remove default margin  */
+padding: 0; /* Remove default padding  */
+display: flex; /*  list items side by side */
+justify-content: space-around; /*  spread list evenly */
+flex-wrap: wrap; /* stack on small screens for responsiveness.  */
+}
+nav li {
+    margin-right: 40px;
+    text-align: center;
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: gold;
+    
+}
+nav a:visited {
+    text-decoration: none;
+    color: rgb(244, 145, 15);
+    
+}
+nav {
+    background-color: #020000;
+    padding: 20px;
+}
 a.gallery:hover::after {
 
     content: "PREPARE TO BE WOWED!!";
     display: block;
     position: absolute;
-    background-color: #cec9b5;
+    background-color: #ffffff;
     padding: 10px;
-    border: 1px solid #c9ab00;
+    border: 1px solid #ffd900;
     border-radius: 5px;
     margin-top: 10px;
     margin-left: 10px;
     z-index: 1;
+}
+.background-container {
+    position: relative;
+    background-color: black; /* Set the background color for the container */
+    overflow: hidden; /* Ensure the container wraps around the floated images */
+    text-align: center; /* Center the text */
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1; /* Move the images behind the text */
+}
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
 }
