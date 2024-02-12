@@ -1,0 +1,40 @@
+
+
+/*---------------------------- Navigation Styles---------------------------- */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #020000;
+    padding: 20px;
+    padding-bottom: 2%;
+  }
+  
+  nav li {
+    margin-right: 20px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: gold;
+  }
+  
+  nav a:hover {
+    color: rgb(244, 145, 15);
+  }
+
+/*---------------------------- Footer Styles ----------------------------*/
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(3, 0, 3);
+    color: gold;
+    clear: both;
+    border-top: 2px solid black;
+  }
+  
