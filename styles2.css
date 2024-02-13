@@ -7,33 +7,33 @@ body {
   background-color: rgb(24, 23, 23);
 }
 
-
 /*  ---------------------------Header Styles /* Header Styles  ---------------------------*/
 header {
   background-color: rgb(3, 0, 3);
   color: gold;
   text-align: left;
-  padding: 30px 20px;
+  
   display: flex;
   align-items: center;
   flex-direction: column; /* Adjusted to stack items vertically */
 }
 
-
 /* ----------------------------Logo Styles ----------------------------*/
 .logo-container {
   max-width: 50%;
+  text-align: center;
 }
 
 .logo-container img {
   max-width: 50%;
   max-height: 100%;
+  min-width: 360px;
 }
 
 #notice {
   color: rgb(215, 160, 9);
+  text-align: center;
 }
-
 
 /*---------------------------- Navigation Styles---------------------------- */
 nav ul {
@@ -52,6 +52,7 @@ nav li {
   margin-right: 20px;
   text-align: center;
   display: inline-block;
+  margin: 10px 0;
 }
 
 nav a {
@@ -63,12 +64,12 @@ nav a:hover {
   color: rgb(244, 145, 15);
 }
 
-
 /* -------------------------- Gallery Styles ----------------------------*/
 .gallery-container {
   width: 50%;
   margin: auto;
   height: 850px;
+  text-align: center;
 }
 
 .gallery-slide {
@@ -76,23 +77,28 @@ nav a:hover {
 }
 
 .gallery-slide img {
-  width: 100%;
-  height: 800px;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  min-width: 350px;
 }
 
-
-    /*---------------------------- Customer Reviews Styles ----------------------------*/
+/*---------------------------- Customer Reviews Styles ----------------------------*/
 #review1 img,
 #review2 img {
-  width: 600px;
+  width: 60%;
   padding: 1%;
+  min-width: 350px;
+  padding-left: 9%;
+  padding-right: 9%;
 }
 
 #review1 img {
-    padding-left: 9%;
+  padding-left: 9%;
+  padding-right: 9%;
 }
 #review2 img {
-    padding-right: 9%;
+  padding-right: 9%;
 }
 
 #review1,
@@ -108,22 +114,16 @@ nav a:hover {
   flex-direction: row-reverse;
 }
 
+/*---------------------------- Footer Styles ----------------------------*/
 
-
-
- /*---------------------------- Footer Styles ----------------------------*/
-
-
- #return {
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(3, 0, 3);
-    color: gold;
-    clear: both;
-    border-top: 2px solid black;
-    
+#return {
+  text-align: center;
+  padding: 0;
+  background-color: rgb(3, 0, 3);
+  color: gold;
+  clear: both;
+  border: gold;
 }
-
 
 .footer {
   text-align: center;
@@ -133,3 +133,30 @@ nav a:hover {
   clear: both;
   border-top: 2px solid black;
 }
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 768px) {
+  #nav_menu ul {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 10px; /* Adjust padding for better spacing */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #review1,
+  #review2 {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text */
+  }
+}
+/*
+
+@media only screen and (max-width: 630px) {
+    #nav_menu ul li {
+        float: none;
+        width: 100%;
+    }
+    
+    */
