@@ -1,6 +1,56 @@
 
+/* ----------------------------Reset default styles and set base styles ----------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(138, 135, 135);
+}
+
+
+/*  ---------------------------Header Styles /* Header Styles  ---------------------------*/
+header {
+  background-color: rgb(3, 0, 3);
+  color: gold;
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Adjusted to stack items vertically */
+}
+
+
+/* ----------------------------Logo Styles---------------------------- */
+.logo-container {
+  max-width: 50%;
+  text-align: center;
+}
+
+.logo-container img {
+  max-width: 50%;
+  max-height: 100%;
+  min-width: 360px;
+}
+
+#notice {
+  color: rgb(215, 160, 9);
+  text-align: center;
+}
+/*---------------------------- ABOUT ME IMAGE ---------------------------- */
+div img {
+  max-width: 30%;
+  max-height: 30%;
+  
+ 
+  height: 20%;
+  text-align: center;
+  min-width: 350px;
+}
 
 /*---------------------------- Navigation Styles---------------------------- */
+
+
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -12,7 +62,7 @@ nav ul {
     padding: 20px;
     padding-bottom: 2%;
   }
-  
+
   nav li {
     margin-right: 20px;
     text-align: center;
@@ -27,6 +77,29 @@ nav ul {
   nav a:hover {
     color: rgb(244, 145, 15);
   }
+/*---------------------------- Main ----------------------------*/
+div {
+   color: yellow;
+   text-align: center;
+   height: 100%;
+}
+main {
+    max-height: 400px;
+    overflow-y: auto; /* vertical scrollbar when content is to large*/
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-template: repeat(3, 1fr) / repeat(auto-fit, minmax(65px, 1fr));*/
+   /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+    grid-gap: 20px;
+    /* grid-gap: 10% 10%;*/
+    align-items: center;
+    padding-top: 3%; 
+    
+}
+
+
+
+
 
 /*---------------------------- Footer Styles ----------------------------*/
 .footer {
@@ -37,4 +110,23 @@ nav ul {
     clear: both;
     border-top: 2px solid black;
   }
-  
+
+
+
+/*---------------------------- MEDIA QUERIES ----------------------------*/
+
+
+@media screen and (max-width: 768px) {
+  #nav_menu ul {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2%;
+}
+}
+
+@media screen and (max-width: 768px) {
+  main {
+     grid-template-columns: 1fr; /* Adjusted for smaller screens */
+     grid-gap: 10px; /* Adjusted grid gap for smaller screens */
+  }
+}
