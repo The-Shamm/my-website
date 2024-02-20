@@ -140,8 +140,7 @@ nav a:hover {
   #nav_menu ul {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    padding: 10px; /* Adjust padding for better spacing */
-  }
+    padding: 2%;
 }
 
 @media screen and (max-width: 768px) {
@@ -149,6 +148,7 @@ nav a:hover {
   #review2 {
     flex-direction: column;
     align-items: center;
+    padding: 4%;
   }
 }
 

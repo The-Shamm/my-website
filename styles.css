@@ -145,10 +145,11 @@ address {
     margin-top: 5px;
 }
 
-@media only screen and (max-width: 630px) {
-    #nav_menu ul li {
-        float: none;
-        width: 100%;
-    }
 
-}
+
+@media screen and (max-width: 768px) {
+    #nav_menu ul {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      padding: 2%;
+  }
