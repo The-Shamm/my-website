@@ -109,6 +109,10 @@ nav a:hover {
   padding-left: 1%;
   padding-right: 1%;
   color: gold;
+      /* Google font */
+      font-family: "Amiri Quran", serif;
+      font-weight: 400;
+      font-style: normal;
 }
 #review2 {
   flex-direction: row-reverse;
@@ -141,7 +145,7 @@ nav a:hover {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     padding: 2%;
-}
+}}
 
 @media screen and (max-width: 768px) {
   #review1,

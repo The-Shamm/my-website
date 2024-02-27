@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(24, 23, 23);
+    font-size: 16px; 
 }
 
 /* ----------------------------Header Styles---------------------------- */
@@ -15,6 +16,8 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+
 }
 
 /* ----------------------------Logo Styles---------------------------- */
@@ -62,6 +65,7 @@ nav ul {
   nav a {
     text-decoration: none;
     color: gold;
+    
   }
   
   nav a:hover {
@@ -80,6 +84,7 @@ main {
 
 main .Welcome {
    color: gold; 
+   text-size-adjust: 9%;
 }
 
 main .creditor {
@@ -111,7 +116,50 @@ main .creditor {
 main #Welcome {
     text-align: center;
     color: gold;
+    font-size: 45px;
+/* ----------------------------Google fonts ----------------------------*/
+    font-family: "Amiri Quran", serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+/* ---------------------------- background video setup ----------------------------*/
+.background-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place it behind the content */
+  }
+  
+  /* cover the entire container */
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Style your existing content on top of the video */
+  header, header, nav, main, footer, {
+    position: relative;
+    z-index: 1; /* Place above the video */
+    
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white; /* Adjust the color for better visibility */
+  }
+  
+  
+  
 
 /* ----------------------------Footer Styles ----------------------------*/
 #return {
@@ -147,9 +195,18 @@ address {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)  {
     #nav_menu ul {
       flex-direction: column; /* Stack items vertically */
       align-items: center; /* Center items horizontally */
       padding: 2%;
+  }}
+
+  head .amiri-quran-regular {
+    font-family: "Amiri Quran", serif;
+    font-weight: 400;
+    font-style: normal;
   }
+  
+
+  
