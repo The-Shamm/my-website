@@ -18,6 +18,23 @@ header {
   flex-direction: column; /* Adjusted to stack items vertically */
 }
 
+/* ---------------------------- background video setup ----------------------------*/
+.background-video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Place it behind the content */
+}
+
+/* cover the entire container */
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 /* ----------------------------Logo Styles ----------------------------*/
 .logo-container {
   max-width: 50%;
