@@ -30,53 +30,51 @@ header {
     max-width: 50%;
     max-height: 100%;
     min-width: 360px;
+    height: 250px;
+    align-items: center;
   }
   
-  #notice {
-    color: rgb(215, 160, 9);
+  #notice, #notice2 {
+    color: rgb(205, 199, 28);
     text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-shadow: 2px 2px 2px rgb(21, 4, 4); /* Adjust the shadow as needed */
   }
-
 /* ----------------------------Top-Level Intro Styles---------------------------- */
 #topLevelIntro {
     margin: 0;
 }
 
-/* ----------------------------Navigation Styles---------------------------- */
+/*---------------------------- Navigation Styles---------------------------- */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #020000;
-    padding: 1%;
-    padding-bottom: 2%;
-  }
-  
-  nav li {
-    margin-right: 20px;
-    text-align: center;
-    display: inline-block;
-    margin: 1% 0;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: gold;
-    
-  }
-  
-  nav a:hover {
-    color: rgb(244, 145, 15);
-  }
-
-.text-container {
-    clear: both;
-    padding-top: 1%; 
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #020000;
+  padding: 20px;
+  padding-bottom: 2%;
 }
+
+nav li {
+  margin-right: 20px;
+  text-align: center;
+  display: inline-block;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: gold;
+}
+
+nav a:hover {
+  color: rgb(244, 145, 15);
+}
+
 /*---------------------------- Main Content Styles---------------------------- */
 main {
     position: relative;
@@ -110,17 +108,20 @@ main .creditor {
 }
 
 #notice {
-    color: rgb(215, 160, 9);
+    color: rgb(29, 25, 15);
 }
 
-main #Welcome {
+main #Welcome, #notice {
     text-align: center;
-    color: gold;
+    color: blackgold;
     font-size: 45px;
 /* ----------------------------Google fonts ----------------------------*/
     font-family: "Amiri Quran", serif;
     font-weight: 400;
     font-style: normal;
+    color: gold;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 /* ---------------------------- background video setup ----------------------------*/
@@ -142,7 +143,7 @@ main #Welcome {
   }
   
   /* Style your existing content on top of the video */
-  header, header, nav, main, footer, {
+  header, header, nav,  footer {
     position: relative;
     z-index: 1; /* Place above the video */
     
