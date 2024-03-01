@@ -18,7 +18,6 @@ header {
   flex-direction: column; /* Adjusted to stack items vertically */
 }
 
-<<<<<<< HEAD
 /* ---------------------------- background video setup ----------------------------*/
 .background-video-container {
   position: fixed;
@@ -41,9 +40,6 @@ video {
 }
 /* ----------------------------Logo Styles ----------------------------*/
 
-=======
-/* ----------------------------Logo Styles ----------------------------*/
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 .logo-container {
   max-width: 50%;
   text-align: center;
@@ -53,7 +49,6 @@ video {
   max-width: 50%;
   max-height: 100%;
   min-width: 360px;
-<<<<<<< HEAD
   height: 250px;
   align-items: center;
 }
@@ -76,18 +71,13 @@ video {
   max-width: 50%;
   max-height: 100%;
   min-width: 360px;
-=======
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 }
 
 #notice {
   color: rgb(215, 160, 9);
   text-align: center;
 }
-<<<<<<< HEAD
 */
-=======
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 
 /*---------------------------- Navigation Styles---------------------------- */
 nav ul {
@@ -106,10 +96,6 @@ nav li {
   margin-right: 20px;
   text-align: center;
   display: inline-block;
-<<<<<<< HEAD
-=======
-  margin: 10px 0;
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 }
 
 nav a {
@@ -125,7 +111,6 @@ nav a:hover {
 .gallery-container {
   width: 50%;
   margin: auto;
-<<<<<<< HEAD
   max-height: 850px;
   text-align: center;
   overflow: hidden; /*needed to hide the height of the video*/
@@ -145,60 +130,32 @@ img {
 
 .gallery-slide img,
 .gallery-slide video {
-=======
-  height: 850px;
-  text-align: center;
-}
-
-.gallery-slide {
-  width: 100%;
-}
-
-.gallery-slide img {
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
   width: 50%;
   height: 50%;
   text-align: center;
   min-width: 350px;
-<<<<<<< HEAD
   border: 10px groove gold;
-=======
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 }
 
 /*---------------------------- Customer Reviews Styles ----------------------------*/
 #review1 img,
 #review2 img {
   width: 60%;
-<<<<<<< HEAD
   min-width: 350px;
   max-width: 20%;
   padding-left: 9%;
   padding-right: 9%;
   
   
-=======
-  padding: 1%;
-  min-width: 350px;
-  padding-left: 9%;
-  padding-right: 9%;
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 }
 
 #review1 img {
   padding-left: 9%;
-<<<<<<< HEAD
   padding-right: 2%;
 }
 #review2 img {
   padding-right: 9%;
   padding-left: 2%;
-=======
-  padding-right: 9%;
-}
-#review2 img {
-  padding-right: 9%;
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 }
 
 #review1,
@@ -209,7 +166,6 @@ img {
   padding-left: 1%;
   padding-right: 1%;
   color: gold;
-<<<<<<< HEAD
   /* Google font */
   font-family: "Amiri Quran", serif;
   font-weight: 400;
@@ -224,15 +180,6 @@ img {
 #review2 {
   flex-direction: row-reverse;
   padding-left: 10%;
-=======
-      /* Google font */
-      font-family: "Amiri Quran", serif;
-      font-weight: 400;
-      font-style: normal;
-}
-#review2 {
-  flex-direction: row-reverse;
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 }
 
 /*---------------------------- Footer Styles ----------------------------*/
@@ -262,12 +209,8 @@ img {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     padding: 2%;
-<<<<<<< HEAD
   }
 }
-=======
-}}
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 
 @media screen and (max-width: 768px) {
   #review1,

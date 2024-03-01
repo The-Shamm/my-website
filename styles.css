@@ -1,6 +1,5 @@
 /* ----------------------------Reset default styles and set base styles ----------------------------*/
 body {
-<<<<<<< HEAD
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -122,134 +121,10 @@ main #Welcome,
   color: gold;
   padding-right: 5%;
   padding-left: 5%;
-=======
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgb(24, 23, 23);
-    font-size: 16px; 
-}
-
-/* ----------------------------Header Styles---------------------------- */
-header {
-    background-color: rgb(3, 0, 3);
-    color: gold;
-    text-align: left;
-    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-
-}
-
-/* ----------------------------Logo Styles---------------------------- */
-.logo-container {
-    max-width: 50%;
-    text-align: center;
-  }
-  
-  .logo-container img {
-    max-width: 50%;
-    max-height: 100%;
-    min-width: 360px;
-  }
-  
-  #notice {
-    color: rgb(215, 160, 9);
-    text-align: center;
-  }
-
-/* ----------------------------Top-Level Intro Styles---------------------------- */
-#topLevelIntro {
-    margin: 0;
-}
-
-/* ----------------------------Navigation Styles---------------------------- */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #020000;
-    padding: 1%;
-    padding-bottom: 2%;
-  }
-  
-  nav li {
-    margin-right: 20px;
-    text-align: center;
-    display: inline-block;
-    margin: 1% 0;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: gold;
-    
-  }
-  
-  nav a:hover {
-    color: rgb(244, 145, 15);
-  }
-
-.text-container {
-    clear: both;
-    padding-top: 1%; 
-    text-align: center;
-}
-/*---------------------------- Main Content Styles---------------------------- */
-main {
-    position: relative;
-}
-
-main .Welcome {
-   color: gold; 
-   text-size-adjust: 9%;
-}
-
-main .creditor {
-    color: gold;
-}
-.background-container {
-    position: relative;
-}
-
-.background-image {
-    position: absolute;
-    top: 0;
-    height: 100%;
-}
-
-.left {
-    left: 0;
-    min-width: auto;
-}
-
-.right {
-    right: 0;
-}
-
-#notice {
-    color: rgb(215, 160, 9);
-}
-
-main #Welcome {
-    text-align: center;
-    color: gold;
-    font-size: 45px;
-/* ----------------------------Google fonts ----------------------------*/
-    font-family: "Amiri Quran", serif;
-    font-weight: 400;
-    font-style: normal;
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 }
 
 /* ---------------------------- background video setup ----------------------------*/
 .background-video-container {
-<<<<<<< HEAD
   position: fixed;
   top: 0;
   left: 0;
@@ -308,80 +183,17 @@ footer {
   color: gold;
   clear: both;
   border-top: 2px solid black;
-=======
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Place it behind the content */
-  }
-  
-  /* cover the entire container */
-  video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Style your existing content on top of the video */
-  header, header, nav, main, footer, {
-    position: relative;
-    z-index: 1; /* Place above the video */
-    
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    color: white; /* Adjust the color for better visibility */
-  }
-  
-  
-  
-
-/* ----------------------------Footer Styles ----------------------------*/
-#return {
-    text-align: center;
-
-    background-color: rgb(3, 0, 3);
-    color: gold;
-    clear: both;
-    border-top: 2px solid black;
-    
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(3, 0, 3);
-    color: gold;
-    clear: both;
-    border-top: 2px solid black;
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 }
 
 /* ----------------------------Refusal Message Styles ----------------------------*/
 .refusal {
-<<<<<<< HEAD
   font-style: italic;
   font-weight: bold;
   margin-top: 5px;
-=======
-    font-style: italic;
-    font-weight: bold;
-    margin-top: 5px;
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
 }
 
 /* ----------------------------Address Styles---------------------------- */
 address {
-<<<<<<< HEAD
   margin-top: 5px;
 }
 
@@ -398,25 +210,3 @@ head .amiri-quran-regular {
   font-weight: 400;
   font-style: normal;
 }
-=======
-    margin-top: 5px;
-}
-
-
-
-@media screen and (max-width: 768px)  {
-    #nav_menu ul {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items horizontally */
-      padding: 2%;
-  }}
-
-  head .amiri-quran-regular {
-    font-family: "Amiri Quran", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
-  
->>>>>>> f05452b9244783e81c5afeb27e1bc57a5815435e
