@@ -1,49 +1,48 @@
 /* ----------------------------Reset default styles and set base styles ----------------------------*/
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgb(24, 23, 23);
-    font-size: 16px; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(24, 23, 23);
+  font-size: 16px;
 }
 
 /* ----------------------------Header Styles---------------------------- */
 header {
-    background-color: rgb(3, 0, 3);
-    color: gold;
-    text-align: left;
-    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  background-color: rgb(3, 0, 3);
+  color: gold;
+  text-align: left;
 
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* ----------------------------Logo Styles---------------------------- */
 .logo-container {
-    max-width: 50%;
-    text-align: center;
-  }
-  
-  .logo-container img {
-    max-width: 50%;
-    max-height: 100%;
-    min-width: 360px;
-    height: 250px;
-    align-items: center;
-  }
-  
-  #notice, #notice2 {
-    color: rgb(205, 199, 28);
-    text-align: center;
-    padding-right: 5%;
-    padding-left: 5%;
-    text-shadow: 2px 2px 2px rgb(21, 4, 4); /* Adjust the shadow as needed */
-  }
+  max-width: 50%;
+  text-align: center;
+}
+
+.logo-container img {
+  max-width: 50%;
+  max-height: 100%;
+  min-width: 360px;
+  height: 250px;
+  align-items: center;
+}
+
+#notice,
+#notice2 {
+  color: rgb(205, 199, 28);
+  text-align: center;
+  padding-right: 5%;
+  padding-left: 5%;
+  text-shadow: 2px 2px 2px rgb(21, 4, 4); /* Adjust the shadow as needed */
+}
 /* ----------------------------Top-Level Intro Styles---------------------------- */
 #topLevelIntro {
-    margin: 0;
+  margin: 0;
 }
 
 /*---------------------------- Navigation Styles---------------------------- */
@@ -63,7 +62,6 @@ nav li {
   margin-right: 20px;
   text-align: center;
   display: inline-block;
-  
 }
 
 nav a {
@@ -77,137 +75,138 @@ nav a:hover {
 
 /*---------------------------- Main Content Styles---------------------------- */
 main {
-    position: relative;
+  position: relative;
 }
 
 main .Welcome {
-   color: gold; 
-   text-size-adjust: 9%;
+  color: gold;
+  text-size-adjust: 9%;
 }
 
 main .creditor {
-    color: gold;
+  color: gold;
 }
 .background-container {
-    position: relative;
+  position: relative;
 }
 
 .background-image {
-    position: absolute;
-    top: 0;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
 }
 
 .left {
-    left: 0;
-    min-width: auto;
+  left: 0;
+  min-width: auto;
 }
 
 .right {
-    right: 0;
+  right: 0;
 }
 
 #notice {
-    color: rgb(29, 25, 15);
+  color: rgb(29, 25, 15);
 }
 
-main #Welcome, #notice {
-    text-align: center;
-    color: blackgold;
-    font-size: 45px;
-/* ----------------------------Google fonts ----------------------------*/
-    font-family: "Amiri Quran", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: gold;
-    padding-right: 5%;
-    padding-left: 5%;
+main #Welcome,
+#notice {
+  text-align: center;
+  color: blackgold;
+  font-size: 45px;
+  /* ----------------------------Google fonts ----------------------------*/
+  font-family: "Amiri Quran", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: gold;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 /* ---------------------------- background video setup ----------------------------*/
 .background-video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Place it behind the content */
-  }
-  
-  /* cover the entire container */
-  video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Style your existing content on top of the video */
-  header, header, nav,  footer {
-    position: relative;
-    z-index: 1; /* Place above the video */
-    
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    color: white; /* Adjust the color for better visibility */
-  }
-  
-  
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Place it behind the content */
+  filter: brightness(
+    70%
+  );
+}
+
+/* cover the entire container */
+video {
+  position:relative;
+  top:0;
+  left:0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style your existing content on top of the video */
+header,
+header,
+nav,
+footer {
+  position: relative;
+  z-index: 1; /* Place above the video */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: white; /* Adjust the color for better visibility */
+}
 
 /* ----------------------------Footer Styles ----------------------------*/
 #return {
-    text-align: center;
+  text-align: center;
 
-    background-color: rgb(3, 0, 3);
-    color: gold;
-    clear: both;
-    border-top: 2px solid black;
-    
+  background-color: rgb(3, 0, 3);
+  color: gold;
+  clear: both;
+  border-top: 2px solid black;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(3, 0, 3);
-    color: gold;
-    clear: both;
-    border-top: 2px solid black;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(3, 0, 3);
+  color: gold;
+  clear: both;
+  border-top: 2px solid black;
 }
 
 /* ----------------------------Refusal Message Styles ----------------------------*/
 .refusal {
-    font-style: italic;
-    font-weight: bold;
-    margin-top: 5px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 /* ----------------------------Address Styles---------------------------- */
 address {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
-
-
-@media screen and (max-width: 768px)  {
-    #nav_menu ul {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items horizontally */
-      padding: 2%;
-  }}
-
-  head .amiri-quran-regular {
-    font-family: "Amiri Quran", serif;
-    font-weight: 400;
-    font-style: normal;
+@media screen and (max-width: 768px) {
+  #nav_menu ul {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2%;
   }
-  
+}
 
-  
+head .amiri-quran-regular {
+  font-family: "Amiri Quran", serif;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -27,6 +27,9 @@ header {
   height: 100%;
   overflow: hidden;
   z-index: -1; /* Place it behind the content */
+  filter: brightness(
+    70%
+  ); /* Adjust the brightness as needed - adjust to help with text legibility */
 }
 
 /* cover the entire container */
@@ -50,7 +53,8 @@ video {
   align-items: center;
 }
 
-#notice, #notice2 {
+#notice,
+#notice2 {
   color: rgb(205, 199, 28);
   text-align: center;
   padding-right: 5%;
@@ -92,7 +96,6 @@ nav li {
   margin-right: 20px;
   text-align: center;
   display: inline-block;
-  
 }
 
 nav a {
@@ -113,12 +116,11 @@ nav a:hover {
   overflow: hidden; /*needed to hide the height of the video*/
   z-index: -1; /* Place it behind the content */
   padding-top: 1%;
-  
 }
 
-.gallery-slide video, img {
+.gallery-slide video,
+img {
   max-height: 800px;
-  
 }
 /*
 .gallery-container.pedicure-slide {
@@ -126,31 +128,34 @@ nav a:hover {
 }
 */
 
-.gallery-slide img, .gallery-slide video {
+.gallery-slide img,
+.gallery-slide video {
   width: 50%;
   height: 50%;
   text-align: center;
   min-width: 350px;
   border: 10px groove gold;
-  
 }
 
 /*---------------------------- Customer Reviews Styles ----------------------------*/
 #review1 img,
 #review2 img {
   width: 60%;
-  padding: 1%;
   min-width: 350px;
+  max-width: 20%;
   padding-left: 9%;
   padding-right: 9%;
+  
+  
 }
 
 #review1 img {
   padding-left: 9%;
-  padding-right: 9%;
+  padding-right: 2%;
 }
 #review2 img {
   padding-right: 9%;
+  padding-left: 2%;
 }
 
 #review1,
@@ -161,13 +166,20 @@ nav a:hover {
   padding-left: 1%;
   padding-right: 1%;
   color: gold;
-      /* Google font */
-      font-family: "Amiri Quran", serif;
-      font-weight: 400;
-      font-style: normal;
+  /* Google font */
+  font-family: "Amiri Quran", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+#review1 {
+  padding-right: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
 #review2 {
   flex-direction: row-reverse;
+  padding-left: 10%;
 }
 
 /*---------------------------- Footer Styles ----------------------------*/
@@ -197,7 +209,8 @@ nav a:hover {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     padding: 2%;
-}}
+  }
+}
 
 @media screen and (max-width: 768px) {
   #review1,
