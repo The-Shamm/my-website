@@ -138,20 +138,36 @@ main #Welcome,
 }
 
 /* cover the entire container */
+
+
+
+
+
 video {
-  position:relative;
+  position:absolute;
   top:0;
   left:0;
-  object-fit: cover;
+  object-fit:cover;
   width: 100%;
   height: 100%;
 }
 
+/*video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: auto; 
+}
+*/
+
+
 /* Style your existing content on top of the video */
 header,
 header,
-nav,
-footer {
+nav
+ {
   position: relative;
   z-index: 1; /* Place above the video */
 }
