@@ -1,0 +1,28 @@
+based off of the peer response I recieved from Patty Patterson I removed some extra/broken links. I know I still need the fourth page. 
+
+Additionally, she pointed out the extra space on my gallery page. I adjusted the padding/margins and added a background video that fills out the page better. I also added borders on all the images including slideshow and radio buttons. I worked in short video's into the slideshow as well. In order to help the contrast I descreased the brightness of the background videos on the pages. 
+
+I used the following on all video's to help the text show better.   
+
+z-index: -1; /* Place it behind the content */
+  filter: brightness(
+    70%
+  );
+
+
+
+She pointed out the footer. But I'd fixed it already and just had to do another push. I think I resolved the bleed over when I brought the footer to the front using the z-index element. 
+
+header,
+nav, footer
+ {
+  position: relative;
+  z-index: 1; /* Place above the video */
+}
+
+
+I still am struggling to get the footer to be below the container however, instead of ontop of it. 
+
+In my head section you can see I've implemented both a google font on the homepage text, and then I added a fontawesome icon. Additionally, I already had the favicon set up(believe I got frustrated and figured that out back in like chapter 3 when they first introduced them)
+
+The last page I intend to make will consist of the form so that customers can submit 

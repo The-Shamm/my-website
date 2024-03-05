@@ -165,8 +165,7 @@ video {
 
 /* Style your existing content on top of the video */
 header,
-header,
-nav
+nav, footer
  {
   position: relative;
   z-index: 1; /* Place above the video */
