@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebfcfd9f45.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSchedule.css">
+    <title>Joy Nails - Schedule</title>
+    <link rel="icon" href="Images/JoyNailsFavicon.jpg" type="image/png">
+
+    <script> //help with cross browser compatibility
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.querySelector('video');
+            video.setAttribute('playsinline', '');
+
+
+            if (video.muted === false) {
+                video.muted = true;
+                video.play().then(() => {
+                    video.muted = false;
+                });
+            } else {
+                video.play();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+    <header>
+        <div class="logo-container">
+            <img src="Images/JoyNailsFavicon.jpg" alt="logo container-favicon">
+        </div>
+    </header>
+
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Schedule.html">Schedule Now</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+            <!--<li><a href="services" class="lastitem">Services</a></li>-->
+            <!--<li><a href="contact.html">Contact</a></li>-->
+
+        </ul>
+    </nav>
+    <div class="background-video-container">
+        <video autoplay muted loop poster="Images/AltCoffee.jpg">
+            <source src="Images/AltCoffee.jpg" type="video/mp4">
+        </video>
+    </div>
+    <h1 id="notice"> Schedule an appointment! <br>
+        We offer many services. </h1>
+
+
+    <!--CODEPEN.IO SCHEDULE FORM>-->
+    <!-- <div class="calendar">
+  <div class="timeline">
+    <div class="spacer"></div>
+    <div class="time-marker">9 AM</div>
+    <div class="time-marker">10 AM</div>
+    <div class="time-marker">11 AM</div>
+    <div class="time-marker">12 PM</div>
+    <div class="time-marker">1 PM</div>
+    <div class="time-marker">2 PM</div>
+    <div class="time-marker">3 PM</div>
+    <div class="time-marker">4 PM</div>
+    <div class="time-marker">5 PM</div>
+    <div class="time-marker">6 PM</div>
+  </div>
+  <div class="days">
+      <div class="date">
+        <p class="date-day">Mon</p>
+     </div>
+      <div class="date">
+        <p class="date-day">Tues</p>
+      </div>
+      <div class="date">
+        <p class="date-day">Wed</p>
+      </div>
+      <div class="date">
+        <p class="date-day">Thurs</p>
+      </div>
+      <div class="date">
+        <p class="date-day">Fri</p>
+      </div>
+  </div>   
+</div> -->
+    <form id="appointmentForm">
+        <form id="appointmentForm">
+            <label for="dayDropdown">Select a Day:</label>
+            <select id="dayDropdown" onchange="clearBox()">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+
+            <div id="checkboxContainer">
+                <label>Available Time Slots:</label>
+                <p class="timeslots">
+                    <label class="container"> 9 AM - 10 AM
+                        <input type="checkbox">
+                    </label>
+                    <label class="container"> 10 AM - 11 AM
+                        <input type="checkbox">
+                    </label>
+                    <label class="container"> 11 AM - 12 PM
+                        <input type="checkbox">
+                    </label>
+                </p>
+                <p class="timeslots">
+                    <label class="container"> 12 PM - 1 PM
+                        <input type="checkbox">
+                    </label>
+                    <label class="container"> 1 PM - 2 PM
+                        <input type="checkbox">
+                    </label>
+                    <label class="container"> 2 PM - 3 PM
+                        <input type="checkbox">
+                    </label>
+                </p>
+                <p class="timeslots">
+                    <label class="container"> 3 PM - 4 PM
+                        <input type="checkbox">
+                    </label>
+                    <label class="container"> 4 PM - 5 PM
+                        <input type="checkbox">
+                    </label>
+                    <label class="container"> 5 PM - 6 PM
+                        <input type="checkbox">
+                    </label>
+                </p>
+                <br>
+                <button onclick="SelectedTimes()">Done</button>
+                <br>
+            </div>
+        </form>
+
+
+        <div id="calendar"></div>
+        <div id="displayList"></div>
+        <div id="Finished"></div>
+
+        <div id="Finished"></div>
+
+
+        <main>
+            <div id="service1"><em>MANICURES</em> <br>
+                <h3> Indulge in a signature manicure experience
+                    where your hands are pampered with a luxurious soak, followed by meticulous nail
+                    shaping, cuticle care, and a rejuvenating massage. Choose from a rainbow of
+                    high-quality polishes or opt for a timeless and elegant French manicure.</h3>
+            </div>
+            <div id="service2"><em>GEL & ACRYLICS</em> <br>
+                <h3> For those seeking long-lasting
+                    glamour, our gel and acrylic enhancements are perfect. Enjoy durable and stunning
+                    nails that withstand the test of time. Whether you prefer a classic look or a bold
+                    statement, we've got you covered.</h3>
+            </div>
+            <div id="service3"><em>SEASON NAIL SPECIALS</em> <br>
+                <h3> Embrace the spirit of the seasons
+                    with our specially curated nail specials. From festive holiday themes to vibrant
+                    summer hues, our seasonal offerings bring a touch of joy to your fingertips.</h3>
+            </div>
+            <div id="service4"><em>NAIL ARTISTRY</em> <br>
+                <h3> Unleash your creativity with our
+                    expert nail artistry services. From intricate designs to personalized nail art
+                    that tells your unique story, Joy's Nail Salon transforms each nail into a canvas
+                    of self-expression. Let your fingertips become a masterpiece.</h3>
+            </div>
+            <div id="service5"><em>PACKAGES</em> <br>
+                <h3> Celebrate special occasions with our group
+                    packages designed for joyous gatherings. Perfect for bridal parties, birthdays, or a
+                    girls' day out, these packages offer a delightful combination of services tailored to
+                    your group's preferences..</h3>
+            </div>
+            <div id="service6"><em>NAIL CARE CONSULTATIONS</em> <br>
+                <h3> Embark on a personalized
+                    journey to nail care excellence with our consultations. Joy's expert advice and tailored
+                    recommendations will guide you in achieving and maintaining healthy, beautiful nails.</h3>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <i class="fa-solid fa-envelope fa-bounce" style="color: #FFD43B;"></i>
+            <p>&copy; 2024 Joy Nails. All rights reserved.</p>
+            <p class="refusal">We also reserve the right to refuse providing service.</p>
+            <address>
+                <p>Contact us at: <a href="mailto:joynails@homebusiness.com">joynails@homebusiness.com</a></p>
+            </address>
+            <li><a class="creditor" href="https://www.linkedin.com/in/sean-hamm-9474b6200" target="_blank"> Learn more about the Website Creator</a></li>
+            <p><a href="#top" id="return"> RETURN TO TOP</a></p>
+        </footer>
+        <script src="Scheduler.js" defer></script>
+</body>
+
+</html>

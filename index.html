@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- TASKERS FOR SELF
-   1. FIX Header alignment(complete)
-   2. add background video to each tab(still debating)
-   2a. Ensure that the text is still legible against the video (about page complete, )
-   3. get rid of unneeded tabs(complete)
-   4. 
 
--->
 
 
 <head>
@@ -23,9 +16,24 @@
   <link rel="stylesheet" href="styles.css">
   <title>Joy Nails - HOMEPAGE</title>
   <link rel="icon" href="Images/JoyNailsFavicon.jpg" type="image/png">
-  <base href="https://www.Joy Nails.com/">
 
 
+  <script>  //help with cross browser compatibility
+    document.addEventListener('DOMContentLoaded', function () {
+      var video = document.querySelector('video');
+      video.setAttribute('playsinline', '');
+
+
+      if (video.muted === false) {
+        video.muted = true;
+        video.play().then(() => {
+          video.muted = false;
+        });
+      } else {
+        video.play();
+      }
+    });
+  </script>
 </head>
 
 <body>
@@ -41,24 +49,63 @@
   <nav id="nav_menu">
     <ul>
       <li><a href="index.html">Homepage</a></li>
-      <li><a class="gallery" href="Gallery.html">Gallery</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Schedule.html">Schedule Now</a></li>
       <li><a href="about.html">About Us</a></li>
       <!--<li><a href="services" class="lastitem">Services</a></li>-->
 
     </ul>
   </nav>
-
+  <div class="background-video-container">
+    <video autoplay muted playsinline loop poster="Images/nailselection.mp4">
+      <source src="Images/nailselection.mp4" type="video/mp4">
+    </video>
+  </div>
   <main>
 
-    <div class="background-video-container">
-      <video autoplay muted loop poster="Images/nailselection.mp4">
-        <source src="Images/nailselection.mp4" type="video/mp4">
-      </video>
-    </div>
-    
-    <h1 id="notice"><br>Life is not perfect, but your nails can be! 
+
+
+
+    <h1 id="notice"><br>Life is not perfect, but your nails can be!
       <p class="desc"> <em>Embark</em> on a journey to <strong>discover</strong> </p>
-    </h1> 
+    </h1>
+    <main class="services">
+      <div id="service1"><em>MANICURES</em> <br>
+        <h3> Indulge in a signature manicure experience
+          where your hands are pampered with a luxurious soak, followed by meticulous nail
+          shaping, cuticle care, and a rejuvenating massage. Choose from a rainbow of
+          high-quality polishes or opt for a timeless and elegant French manicure.</h3>
+      </div>
+      <div id="service2"><em>GEL & ACRYLICS</em> <br>
+        <h3> For those seeking long-lasting
+          glamour, our gel and acrylic enhancements are perfect. Enjoy durable and stunning
+          nails that withstand the test of time. Whether you prefer a classic look or a bold
+          statement, we've got you covered.</h3>
+      </div>
+      <div id="service3"><em>SEASON NAIL SPECIALS</em> <br>
+        <h3> Embrace the spirit of the seasons
+          with our specially curated nail specials. From festive holiday themes to vibrant
+          summer hues, our seasonal offerings bring a touch of joy to your fingertips.</h3>
+      </div>
+      <div id="service4"><em>NAIL ARTISTRY</em> <br>
+        <h3> Unleash your creativity with our
+          expert nail artistry services. From intricate designs to personalized nail art
+          that tells your unique story, Joy's Nail Salon transforms each nail into a canvas
+          of self-expression. Let your fingertips become a masterpiece.</h3>
+      </div>
+      <div id="service5"><em>PACKAGES</em> <br>
+        <h3> Celebrate special occasions with our group
+          packages designed for joyous gatherings. Perfect for bridal parties, birthdays, or a
+          girls' day out, these packages offer a delightful combination of services tailored to
+          your group's preferences..</h3>
+      </div>
+      <div id="service6"><em>NAIL CARE CONSULTATIONS</em> <br>
+        <h3> Embark on a personalized
+          journey to nail care excellence with our consultations. Joy's expert advice and tailored
+          recommendations will guide you in achieving and maintaining healthy, beautiful nails.</h3>
+      </div>
+    </main>
+
     <h2 id="Welcome">
       <p>Indulge in the epitome of self-care at our luxurious nail salon,
         where beauty meets relaxation. Immerse yourself in a tranquil haven
@@ -74,15 +121,14 @@
         experience!</p>
 
     </h2>
-    <li><a class="creditor" href="https://www.linkedin.com/in/sean-hamm-9474b6200" target="_blank"> Click here to open a
-        new tab and learn more about the Website Creator</a></li>
+
+
+
   </main>
 
 
 
-  <h2>
-    <img src="Images/Nails1.jpeg" alt="Image of customer nails" width="80">
-  </h2>
+
   <footer class="footer">
     <i class="fa-solid fa-envelope fa-bounce" style="color: #FFD43B;"></i>
     <p>&copy; 2024 Joy Nails. All rights reserved.</p>
@@ -90,6 +136,8 @@
     <address>
       <p>Contact us at: <a href="mailto:joynails@homebusiness.com">joynails@homebusiness.com</a></p>
     </address>
+    <li><a class="creditor" href="https://www.linkedin.com/in/sean-hamm-9474b6200" target="_blank"> Learn more about the
+        Website Creator</a></li>
     <p><a href="#top" id="return"> RETURN TO TOP</a></p>
   </footer>
 </body>

@@ -61,23 +61,7 @@ video {
   padding-left: 5%;
   text-shadow: 2px 2px 2px rgb(181, 16, 16); /* Adjust the shadow as needed */
 }
-/*
-/*.logo-container {
-  max-width: 50%;
-  text-align: center;
-}
 
-.logo-container img {
-  max-width: 50%;
-  max-height: 100%;
-  min-width: 360px;
-}
-
-#notice {
-  color: rgb(215, 160, 9);
-  text-align: center;
-}
-*/
 
 /*---------------------------- Navigation Styles---------------------------- */
 nav ul {
@@ -116,24 +100,21 @@ nav a:hover {
   overflow: hidden; /*needed to hide the height of the video*/
   z-index: -1; /* Place it behind the content */
   padding-top: 1%;
+  min-width: 375px;
 }
 
 .gallery-slide video,
 img {
   max-height: 800px;
 }
-/*
-.gallery-container.pedicure-slide {
-  
-}
-*/
+
 
 .gallery-slide img,
 .gallery-slide video {
   width: 50%;
   height: 50%;
   text-align: center;
-  min-width: 350px;
+  min-width: 355px;
   border: 10px groove gold;
 }
 
