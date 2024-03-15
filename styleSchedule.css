@@ -50,10 +50,18 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 } */
 
-body {
+body  {
   font-family: system-ui, sans-serif;
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: white; /* Adjust the color for better visibility */
+}
 /* .date {
   display: flex;
   gap: 1em;
