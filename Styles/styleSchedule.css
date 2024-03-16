@@ -11,71 +11,11 @@ header {
   background-color: rgb(3, 0, 3);
   color: gold;
   text-align: left;
-
   display: flex;
   align-items: center;
   flex-direction: column; /* Adjusted to stack items vertically */
 }
 
-
-/* ---------------------------- (codepen.io)Schedule Form ----------------------------*/
-/* :root {
-  --numDays: 5;
-  --numHours: 10;
-  --timeHeight: 60px;
-}
-
-.calendar {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: auto 1fr;
-  margin: 2rem;
-  background-color: #f0f0f0;
-}
-
-.timeline {
-  position: relative;
-  display: grid;
-  justify-content: space-between;
-  padding: 10px;
-  grid-template-rows: repeat(var(--numHours), var(--timeHeight));
-}
-
-
-
-.days {
-  display: grid;
-  grid-column: 2;
-  gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-} */
-
-body  {
-  font-family: system-ui, sans-serif;
-}
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-  color: white; /* Adjust the color for better visibility */
-}
-/* .date {
-  display: flex;
-  gap: 1em;
-  flex-grow: 1;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-.date-day {
-  display: inline;
-  font-size: 1rem;
-  font-weight: 100;
-}  */
 
 .timeslots {
   display: grid;
@@ -201,13 +141,11 @@ main {
   overflow-y: auto; /* vertical scrollbar when content is to large*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /*grid-template: repeat(3, 1fr) / repeat(auto-fit, minmax(65px, 1fr));*/
-  /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
   grid-gap: 20px;
-  /* grid-gap: 10% 10%;*/
   align-items: center;
   padding-top: 3%;
 }
+
 
 /*---------------------------- Footer Styles ----------------------------*/
 .footer {
@@ -225,6 +163,10 @@ notice2 {
   font-weight: 400;
   font-style: normal;
 }
+
+/*----------------------------appointment form ----------------------------*/
+
+
 /*---------------------------- MEDIA QUERIES ----------------------------*/
 
 @media screen and (max-width: 768px) {
