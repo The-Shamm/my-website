@@ -112,10 +112,7 @@ main {
   overflow-y: auto; /* vertical scrollbar when content is to large*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /*grid-template: repeat(3, 1fr) / repeat(auto-fit, minmax(65px, 1fr));*/
-  /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
   grid-gap: 20px;
-  /* grid-gap: 10% 10%;*/
   align-items: center;
   padding-top: 3%;
 }

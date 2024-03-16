@@ -16,7 +16,6 @@ header {
   flex-direction: column; /* Adjusted to stack items vertically */
 }
 
-
 .timeslots {
   display: grid;
   grid-column: 2;
@@ -43,8 +42,6 @@ label.checkbox-label {
 label.checkbox-label input[type="checkbox"] {
   margin-right: 5px;
 }
-
-
 
 /* ---------------------------- background video setup ----------------------------*/
 
@@ -146,7 +143,6 @@ main {
   padding-top: 3%;
 }
 
-
 /*---------------------------- Footer Styles ----------------------------*/
 .footer {
   text-align: center;
@@ -164,7 +160,6 @@ notice2 {
   font-style: normal;
 }
 
-/*----------------------------appointment form ----------------------------*/
 
 
 /*---------------------------- MEDIA QUERIES ----------------------------*/
